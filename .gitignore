@@ -2,6 +2,7 @@ node_modules/
 dist/
 .env
 *.pdf
+!frontend/public/docs/*.pdf
 memory/
 prd.md
 Vijay_Vishwakarma_CV_Updated*
