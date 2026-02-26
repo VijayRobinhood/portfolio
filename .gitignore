@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.pdf
+memory/
+prd.md
+Vijay_Vishwakarma_CV_Updated*
+frontend/.env
+backend/.env
