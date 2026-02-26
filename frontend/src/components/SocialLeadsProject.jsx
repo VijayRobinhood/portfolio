@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { Instagram, Facebook, Bot, TrendingUp, MessageSquare, BarChart2, Zap, X, ZoomIn } from 'lucide-react'
 
+const base = import.meta.env.BASE_URL
+
 const platforms = [
   {
     id: 'instagram',
     label: 'Instagram',
     badgeColor: 'bg-pink-600',
     screens: [
-      { id: 'insta-dashboard', label: 'Lead Dashboard', icon: BarChart2, src: '/screenshots/instaLead-dahsboard.png', alt: 'InstaLead – Lead Dashboard' },
-      { id: 'insta-video', label: 'Video Analytics', icon: TrendingUp, src: '/screenshots/instalead-intavideodashboard.png', alt: 'InstaLead – Instagram Video Dashboard' },
+      { id: 'insta-dashboard', label: 'Lead Dashboard', icon: BarChart2, src: `${base}screenshots/instaLead-dahsboard.png`, alt: 'InstaLead – Lead Dashboard' },
+      { id: 'insta-video', label: 'Video Analytics', icon: TrendingUp, src: `${base}screenshots/instalead-intavideodashboard.png`, alt: 'InstaLead – Instagram Video Dashboard' },
     ],
   },
   {
@@ -16,7 +18,7 @@ const platforms = [
     label: 'Facebook',
     badgeColor: 'bg-blue-600',
     screens: [
-      { id: 'fb-video', label: 'Video Analytics', icon: TrendingUp, src: '/screenshots/instalead-facebookvideodashboard.png', alt: 'InstaLead – Facebook Video Dashboard' },
+      { id: 'fb-video', label: 'Video Analytics', icon: TrendingUp, src: `${base}screenshots/instalead-facebookvideodashboard.png`, alt: 'InstaLead – Facebook Video Dashboard' },
     ],
   },
 ]

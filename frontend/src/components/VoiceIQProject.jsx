@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import { Phone, X, ZoomIn, Bot, TrendingUp, Star, ShieldCheck } from 'lucide-react'
 
+const base = import.meta.env.BASE_URL
+
 const callTypes = [
   {
     id: 'tele-sales',
     label: 'Tele-Sales Calls',
     badgeColor: 'bg-indigo-600',
     screens: [
-      { id: 'call-analysis', label: 'Call Analysis', icon: Phone, src: '/screenshots/Ai-CallAnalysis.png', alt: 'VoiceIQ – AI Call Analysis' },
-      { id: 'agent-eval', label: 'Agent Evaluation', icon: Star, src: '/screenshots/Agent-Evaluation.png', alt: 'VoiceIQ – Agent Evaluation' },
-      { id: 'lead-analysis', label: 'Lead Analysis', icon: TrendingUp, src: '/screenshots/Lead-Analysis.png', alt: 'VoiceIQ – Lead Analysis' },
+      { id: 'call-analysis', label: 'Call Analysis', icon: Phone, src: `${base}screenshots/Ai-CallAnalysis.png`, alt: 'VoiceIQ – AI Call Analysis' },
+      { id: 'agent-eval', label: 'Agent Evaluation', icon: Star, src: `${base}screenshots/Agent-Evaluation.png`, alt: 'VoiceIQ – Agent Evaluation' },
+      { id: 'lead-analysis', label: 'Lead Analysis', icon: TrendingUp, src: `${base}screenshots/Lead-Analysis.png`, alt: 'VoiceIQ – Lead Analysis' },
     ],
   },
   {
@@ -17,10 +19,10 @@ const callTypes = [
     label: 'PLVC Calls',
     badgeColor: 'bg-purple-600',
     screens: [
-      { id: 'plvc-summary', label: 'Summary', icon: Phone, src: '/screenshots/plvc-summary.png', alt: 'VoiceIQ PLVC – Summary' },
-      { id: 'plvc-compliance', label: 'Compliance Check', icon: ShieldCheck, src: '/screenshots/plvc-compliancecheck.png', alt: 'VoiceIQ PLVC – Compliance Check' },
-      { id: 'plvc-softskills', label: 'Soft Skills', icon: Star, src: '/screenshots/plvc-agentsoftskills.png', alt: 'VoiceIQ PLVC – Agent Soft Skills' },
-      { id: 'plvc-checklist', label: 'Verification', icon: TrendingUp, src: '/screenshots/plvc-verifiationchecklist.png', alt: 'VoiceIQ PLVC – Verification Checklist' },
+      { id: 'plvc-summary', label: 'Summary', icon: Phone, src: `${base}screenshots/plvc-summary.png`, alt: 'VoiceIQ PLVC – Summary' },
+      { id: 'plvc-compliance', label: 'Compliance Check', icon: ShieldCheck, src: `${base}screenshots/plvc-compliancecheck.png`, alt: 'VoiceIQ PLVC – Compliance Check' },
+      { id: 'plvc-softskills', label: 'Soft Skills', icon: Star, src: `${base}screenshots/plvc-agentsoftskills.png`, alt: 'VoiceIQ PLVC – Agent Soft Skills' },
+      { id: 'plvc-checklist', label: 'Verification', icon: TrendingUp, src: `${base}screenshots/plvc-verifiationchecklist.png`, alt: 'VoiceIQ PLVC – Verification Checklist' },
     ],
   },
 ]

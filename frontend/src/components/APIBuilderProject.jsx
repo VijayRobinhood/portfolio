@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { Code2, Database, Zap, FileText, TestTube, ScrollText, X, ZoomIn, ShieldCheck, Globe } from 'lucide-react'
 
+const base = import.meta.env.BASE_URL
+
 const screens = [
-  { id: 'login',      label: 'Login',         icon: ShieldCheck, src: '/screenshots/API-Login.png',         alt: 'API Builder – Login' },
-  { id: 'dashboard',  label: 'Dashboard',     icon: Globe,       src: '/screenshots/API-Dashboard.png',     alt: 'API Builder – Dashboard' },
-  { id: 'endpoints',  label: 'Endpoints',     icon: Code2,       src: '/screenshots/API-Endpoints.png',     alt: 'API Builder – Endpoints' },
-  { id: 'tester',     label: 'API Tester',    icon: TestTube,    src: '/screenshots/API-tester.png',        alt: 'API Builder – API Tester' },
-  { id: 'docs',       label: 'Docs',          icon: FileText,    src: '/screenshots/API-Documentation.png', alt: 'API Builder – Documentation' },
-  { id: 'logs',       label: 'Logs',          icon: ScrollText,  src: '/screenshots/API-Logs.png',          alt: 'API Builder – Logs' },
+  { id: 'login',      label: 'Login',         icon: ShieldCheck, src: `${base}screenshots/API-Login.png`,         alt: 'API Builder – Login' },
+  { id: 'dashboard',  label: 'Dashboard',     icon: Globe,       src: `${base}screenshots/API-Dashboard.png`,     alt: 'API Builder – Dashboard' },
+  { id: 'endpoints',  label: 'Endpoints',     icon: Code2,       src: `${base}screenshots/API-Endpoints.png`,     alt: 'API Builder – Endpoints' },
+  { id: 'tester',     label: 'API Tester',    icon: TestTube,    src: `${base}screenshots/API-tester.png`,        alt: 'API Builder – API Tester' },
+  { id: 'docs',       label: 'Docs',          icon: FileText,    src: `${base}screenshots/API-Documentation.png`, alt: 'API Builder – Documentation' },
+  { id: 'logs',       label: 'Logs',          icon: ScrollText,  src: `${base}screenshots/API-Logs.png`,          alt: 'API Builder – Logs' },
 ]
 
 const features = [

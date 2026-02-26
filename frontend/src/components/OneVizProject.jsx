@@ -4,33 +4,35 @@ import {
   ShieldCheck, Lock, Grid, X, ZoomIn,
 } from 'lucide-react'
 
+const base = import.meta.env.BASE_URL
+
 const screens = [
   {
     id: 'login',
     label: 'Login',
     icon: Lock,
-    src: '/screenshots/login.png',
+    src: `${base}screenshots/login.png`,
     alt: 'OneViz AI – Login Screen',
   },
   {
     id: 'home',
     label: 'Home',
     icon: Grid,
-    src: '/screenshots/home.png',
+    src: `${base}screenshots/home.png`,
     alt: 'OneViz AI – Home Dashboard',
   },
   {
     id: 'dashboard',
     label: 'MF Insights',
     icon: BarChart2,
-    src: '/screenshots/mf-insights.png',
+    src: `${base}screenshots/mf-insights.png`,
     alt: 'OneViz AI – MF Insights Dashboard',
   },
   {
     id: 'ai-chat',
     label: 'AI Chat',
     icon: MessageSquare,
-    src: '/screenshots/Ai-Chat.png',
+    src: `${base}screenshots/Ai-Chat.png`,
     alt: 'OneViz AI – AI Chat powered by Gemini',
   },
 ]
