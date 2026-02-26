@@ -15,7 +15,7 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return
     setStatus('sending')
     try {
-      await axios.post('/api/contact', form)
+      await axios.post('https://automation.oneinsure.com/webhook/PostForm', form)
       setStatus('success')
       setForm({ name: '', email: '', message: '' })
     } catch {
