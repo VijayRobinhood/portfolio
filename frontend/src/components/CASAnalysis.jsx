@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FileText, ExternalLink, Sparkles, X, ZoomIn } from 'lucide-react'
 
 const pdfSrc = `${import.meta.env.BASE_URL}docs/cas-analysis-sample.pdf`
+const pdfViewerSrc = `https://docs.google.com/viewer?url=https://VijayRobinhood.github.io/portfolio/docs/cas-analysis-sample.pdf&embedded=true`
 
 export default function CASAnalysis() {
   const [lightbox, setLightbox] = useState(false)
@@ -55,7 +56,7 @@ export default function CASAnalysis() {
                 <ZoomIn size={13} /> Fullscreen
               </button>
               <a
-                href={pdfSrc}
+                href={`https://VijayRobinhood.github.io/portfolio/docs/cas-analysis-sample.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 px-3 py-1.5 bg-purple-600 hover:bg-purple-500 text-white rounded-lg text-xs font-semibold transition-all"
@@ -68,7 +69,7 @@ export default function CASAnalysis() {
           {/* Embedded PDF */}
           <div className="w-full" style={{ height: '80vh' }}>
             <iframe
-              src={pdfSrc}
+              src={pdfViewerSrc}
               className="w-full h-full"
               title="CAS Portfolio Analysis Report"
             />
@@ -93,7 +94,7 @@ export default function CASAnalysis() {
           </div>
           <div className="flex-1" onClick={e => e.stopPropagation()}>
             <iframe
-              src={pdfSrc}
+              src={pdfViewerSrc}
               className="w-full h-full"
               title="CAS Portfolio Analysis Report Fullscreen"
             />
